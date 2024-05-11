@@ -38,3 +38,6 @@ RUN apt-get install -y ack
 # Install ESLint (MC v1)
 
 RUN npm install -g eslint
+
+
+CMD ["sleep", "infinity"]
