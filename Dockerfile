@@ -41,3 +41,19 @@ RUN npm install -g eslint
 
 
 CMD ["sleep", "infinity"]
+
+
+
+FROM node:latest AS test-project
+
+COPY index.mjs .
+COPY package.json .
+COPY test_project/package.json test_project/
+COPY test_project/index.mjs test_project/
+
+WORKDIR /test_project
+
+RUN npm install
+RUN npm update
+
+CMD ["node", "index.mjs"]
