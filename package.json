@@ -1,0 +1,10 @@
+{
+  "name": "test-library",
+  "version": "1.0.0",
+  "description": "A test library that you can replace with your own code.",
+  "main": "index.mjs",
+  "scripts": {
+  },
+  "author": "Matt Calkins",
+  "license": "ISC"
+}
